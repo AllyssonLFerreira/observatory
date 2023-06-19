@@ -1,0 +1,27 @@
+<ng-container [ngSwitch]="type">
+    <button  class="btn {{colorBtn}}" type="default" *ngSwitchDefault>
+      <span>{{text}}</span>
+    </button>
+
+    <button class="btn glass" type="glass" *ngSwitchCase="'glass'">
+      <span>{{text}}</span>
+    </button>
+
+    <button class="btn btn-outline {{colorBtn}}" type="outline" *ngSwitchCase="'outline'">
+      <span>{{text}}</span>
+    </button>
+
+    <button class="btn btn-circle {{colorBtn}}" type="circle" *ngSwitchCase="'circle'">
+      <span>{{text}}</span>
+    </button>
+
+    <button class="btn btn-square {{colorBtn}}" type="square" *ngSwitchCase="'square'">
+      <span>{{text}}</span>
+    </button>
+
+    <button class="btn {{colorBtn}}" type="square" *ngSwitchCase="'loading'">
+      <span class="loading loading-spinner"></span>
+      <span *ngIf="text">{{text}}</span>
+    </button>
+
+</ng-container> 

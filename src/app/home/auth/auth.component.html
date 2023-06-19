@@ -1,0 +1,30 @@
+<ng-container>
+  <form class="login">
+    <div class="flex-shrink-0 w-full max-w-sm shadow-2xl card bg-base-100">
+      <div class="card-body">
+        <app-shared-input 
+            type="email" 
+            label="Qual e-mail cadastrado ?" 
+            placeholder="Digite aqui seu e-mail"
+        />
+  
+        <app-shared-input 
+            type="password" 
+            label="Qual sua Senha ?" 
+            placeholder="Digite aqui sua senha"
+        />
+  
+        <div class="form-control">
+          <label class="label">
+            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+          </label>
+        </div>
+  
+        <div class="mt-6 form-control">
+          <app-shared-button colorBtn="btn-primary" type="outline" text="Login"/>
+        </div>
+  
+      </div>
+    </div>
+  </form>
+</ng-container>

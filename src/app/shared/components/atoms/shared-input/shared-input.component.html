@@ -1,0 +1,25 @@
+<ng-container *ngIf="!!parentForm; else withoutParentForm">
+  <div class="w-full max-w-xs form-control">
+    <label class="label">
+      <span class="label-text">{{label}}</span>
+      <span *ngIf="!!message"class="label-text-alt">{{message}}</span>
+    </label>
+    <input placeholder={{placeholder}} 
+          type={{type}}
+          class="w-full max-w-xs input input-bordered" 
+    />
+  </div>
+</ng-container>
+
+<ng-template #withoutParentForm>
+  <div class="w-full max-w-xs form-control">
+    <label class="label">
+      <span class="label-text">{{label}}</span>    
+    </label>
+    <input placeholder={{placeholder}} 
+          type={{type}}
+          class="w-full max-w-xs input input-bordered" 
+    />
+  </div>
+</ng-template>
+
